@@ -16,3 +16,34 @@ python3 ./tweetbot/example.py
 Relevant files for reference:
 1. /tweetbot/example.py includes an example of file to use SeleniumClient for scrapping AI related tweets
 2. /tweetbot/AI_100_sentiments.csv is an example of 100 tweets scraped using SeleniumClient class with the query string "AI"
+
+
+
+
+package available on testpypi as well and can be installed directly on your computer using
+```bash 
+pip install -i https://test.pypi.org/simple/ tweetbot
+```
+Do remember to install selenium and pandas before running the below code to test it out:
+
+to install selenium and pandas:
+```bash
+pip install selenium pandas
+```
+to test out tweetbot package, put this in python file:
+```python
+from tweetbot import SeleniumCli
+username = "twitter_username"
+password = "twitter_password"
+path ="/path/to/chromedriver" # do remember to edit the path if it's in a different place
+sel = SeleniumCli.SeleniumClient(path, 4)
+
+d = sel.login(username, password)
+
+query = "environment"
+number_of_posts = 50
+df = sel.keep_searching(query, number_of_posts)
+print(df)
+
+df.to_csv("example.csv")
+```
