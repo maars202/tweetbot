@@ -1,5 +1,6 @@
 # tweetbot
-Bot that scrapes tweets from twitter and performs sentiment analysis over time. It uses a class built from Selenium. Some of the challenges faced were making the class flexible for users with slower browsers that require longer waiting/ sleep time for the class to work. The tweets fetched are limited since sometimes tweets older than 2 days cannot be retrieved using twitter search engine and require an advanced search. Thus future editions will have scraping features using the advanced search engine for a period of time. 
+Bot that scrapes tweets from twitter. It uses a class built from Selenium. Some of the challenges faced were making the class flexible for users with slower browsers that require longer waiting/ sleep time for the class to work. The tweets fetched are limited since sometimes tweets older than 2 days cannot be retrieved using twitter search engine and require an advanced search. Thus future editions will have scraping features using the advanced search engine for a period of time as well as being able to output the sentiment analysis done.
+
 
 To install relevant packages with pip:
 ```bash
