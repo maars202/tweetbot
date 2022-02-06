@@ -7,7 +7,7 @@ To install relevant packages with pip:
 pip install -r requirements.txt
 ```
 to run example file, /tweetbot/example.py, 
-1. download chrome driver from 
+1. download chrome driver from  https://chromedriver.chromium.org/home
 2. edit username, password and path to your downloaded chrome driver in /tweetbot/example.py file
 3. 
 ```bash
